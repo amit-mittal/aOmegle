@@ -2,19 +2,16 @@
 /****************************************
 *		Server of Android IM Application
 *
-*		Author: ahmet oguz mermerkaya
-* 	Email: ahmetmermerkaya@hotmail.com
-* 	Date: Dec, 4, 2008   	
-* 	
 *		Supported actions: 
-*			1.  authenticateUser
-*			    if user is authentiated return friend list
+*		1.  authenticateUser if user is authentiated return friend list
 * 		    
-*			2.  signUpUser
+*		2.  signUpUser
 * 		
-*			3.  addNewFriend
+*		3.  addNewFriend
 * 		
 * 		4.  responseOfFriendReqs
+*
+*		5.	Above features for strangers also
 *************************************/
 
 
