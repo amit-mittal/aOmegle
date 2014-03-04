@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionCode="1" android:versionName="1.0.0"
+	package="com.messenger">
+	
+    <uses-sdk android:minSdkVersion="6" />
+	 <uses-permission android:name="android.permission.INTERNET" />
+	 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	 <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	 <uses-permission android:name="android.permission.SEND_SMS"/>
+
+	<application>
+		<activity android:name=".FriendList">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"></action>
+				<category
+					android:name="android.intent.category.NORMAL">
+				</category>
+			</intent-filter>
+		</activity>
+		<service android:name=".services.IMService"></service>
+		<activity android:name=".Login">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"></action>
+				<category android:name="android.intent.category.LAUNCHER">
+				</category>
+			</intent-filter>
+		</activity>
+		<activity android:name=".Messaging">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"></action>
+				<category
+					android:name="android.intent.category.NORMAL">
+				</category>
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".Stranger">
+			<intent-filter>
+				<action android:name="android.intent.action.STRANGER"></action>
+				<category
+					android:name="android.intent.category.DEFAULT">
+				</category>
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".StrangerList">
+			<intent-filter>
+				<action android:name="android.intent.action.STRANGERLIST"></action>
+				<category
+					android:name="android.intent.category.DEFAULT">
+				</category>
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".ChangeStranger">
+			<intent-filter>
+				<action android:name="android.intent.action.CHANGESTRANGER"></action>
+				<category
+					android:name="android.intent.category.DEFAULT">
+				</category>
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".ChatList">
+			<intent-filter>
+				<action android:name="android.intent.action.CHATLIST"></action>
+				<category
+					android:name="android.intent.category.DEFAULT">
+				</category>
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".StrangerMessaging">
+			<intent-filter>
+				<action android:name="android.intent.action.STRANGERMESSAGING"></action>
+				<category
+					android:name="android.intent.category.DEFAULT">
+				</category>
+			</intent-filter>
+		</activity>
+		
+	<activity android:name=".SignUp"><intent-filter><action android:name="android.intent.action.MAIN"></action>
+<category android:name="android.intent.category.NORMAL"></category>
+</intent-filter>
+</activity>
+<activity android:name=".ManageFriend"><intent-filter><action android:name="android.intent.action.MAIN"></action>
+<category android:name="android.intent.category.NORMAL"></category>
+</intent-filter>
+</activity>
+<activity android:name=".UnApprovedFriendList"><intent-filter><action android:name="android.intent.action.MAIN"></action>
+<category android:name="android.intent.category.NORMAL"></category>
+</intent-filter>
+</activity>
+</application>
+
+
+</manifest>
